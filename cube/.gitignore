@@ -1,0 +1,24 @@
+# Synthetic data is regenerated via scripts; never commit it
+data/
+*.parquet
+*.duckdb
+*.duckdb.wal
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Cube local state
+.cubestore/
+
+# Best-effort generated model + verbose run logs (regenerate via scripts/convert.py).
+# The curated reports/complexity.md is kept in git.
+model/
+reports/*.log
